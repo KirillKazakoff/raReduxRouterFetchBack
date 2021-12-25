@@ -29,7 +29,7 @@ class Db {
             },
             {
                 id: '2',
-                desc: 'Hello world 2',
+                desc: 'Heh heh heh',
             },
             {
                 id: '3',
@@ -60,7 +60,7 @@ class Db {
         if (index === -1) return;
 
         this.data[index] = item;
-        this.descriptions[index] = item.desc;
+        this.descriptions[index].desc = item.desc;
     }
 
     getItem(id) {
